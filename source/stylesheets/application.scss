@@ -1,0 +1,452 @@
+@charset "utf-8";
+@import url(http://fonts.googleapis.com/css?family=Oswald|Quattrocento);
+
+@import 'vars';
+
+@import 'gridle/gridle';
+
+@import "bourbon";
+@import "base/base";   /* Bitters needs to be imported before Neat */
+@import "neat";
+
+@import 'modules';
+
+@include gridle_setup((context: 12, gutter-width: 1rem));
+@include gridle_register_state ( small, (max-width: 558px));
+@include gridle_register_state ( medium, (max-width: 720px));
+@include gridle_generate_classes();
+
+iframe {
+  height: 266px !important;
+}
+
+body {
+  font-size: 21px;
+  line-height: 30px;
+  font-family: $body-font;
+  color: #4A4A4A;
+  background: #f5f5f5 image-url("images/background-food.png") repeat top left;
+}
+
+.hidden {
+  display: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+p {
+  margin: 0px;
+}
+
+h2, h3 {
+  margin-top: .5rem;
+  margin-bottom: 1.5rem;
+}
+
+h2 {
+  font-size: 34px;
+  line-height: 46px;
+  @include gridle_state(small) {
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+
+h3 {
+  font-size: 28px;
+  line-height: 38px;
+  @include gridle_state(small) {
+    font-size: 18px;
+    line-height: 26px;
+  }
+}
+
+header {
+  margin-bottom: $default-margin-bottom;
+}
+
+p {
+  margin-bottom: 1rem;
+  @include gridle_state(small) {
+    font-size: 15px;
+  }
+}
+
+a {
+  text-decoration: none;
+}
+
+dd {
+  margin-bottom: 3rem;
+}
+
+dt {
+  font-weight: bold;
+}
+
+.headline {
+  font-family: $headline-font;
+}
+
+.container {
+  @include gridle_container();
+  padding-bottom: 3rem;
+}
+
+section {
+  @include gridle(8);
+  @include gridle_push(2);
+  @include gridle(11, "medium");
+  @include gridle_push(1, "medium");
+  @include gridle(12, "small");
+  @include gridle_push(0, "small");
+
+  margin-bottom: $default-margin-bottom;
+}
+
+hr {
+  margin: 0px;
+  border-color: #ddd;
+  opacity: .4;
+}
+
+form {
+  margin-bottom: $default-margin-bottom;
+}
+
+ul {
+  margin: 0px;
+  padding: 0px;
+  margin-bottom: $default-margin-bottom;
+}
+
+li {
+  list-style: none;
+  margin-bottom: .5rem;
+}
+
+.banner {
+  padding-top: 2rem;
+  opacity: .81;
+
+  img {
+    position: relative;
+  }
+
+  .banner-words {
+    @include gridle(12);
+  }
+
+  .banner-headline {
+    color: $wirsing-color;
+
+    margin-bottom: 1rem;
+
+    font-size: 68px;
+    line-height: 80px;
+
+    @include gridle_state(small) {
+      font-size: 40px;
+      line-height: 42px;
+    }
+  }
+
+  .banner-subheadline {
+    margin-bottom: 1rem;
+
+    font-size: 36px;
+    line-height: 48px;
+
+    @include gridle_state(small) {
+      font-size: 21px;
+      line-height: 32px
+    }
+  }
+
+  .banner-subsubheadline {
+    color: $wirsing-light;
+
+    margin-bottom: 1rem;
+
+    font-size: 29px;
+    line-height: 45px;
+
+    @include gridle_state(small) {
+      font-size: 21px;
+      line-height: 33px
+    }
+  }
+}
+
+.sidenote {
+  font-size: 20px;
+}
+
+input[type='email'] {
+  border-radius: 3px;
+  /* Input Background: */
+  background: #FFFFFF;
+  border: 1px solid #D8D8D8;
+  box-sizing: border-box;
+
+  font-size: 18px;
+  color: #BBBBBB;
+  line-height: 19px;
+  /* Email Address: */
+  padding: .5rem;
+  width: 60%;
+
+  margin-bottom: 1rem;
+  display: block;
+  /* Stack when small */
+  @include gridle_state(small) {
+    width: 91%;
+    margin-bottom: 1rem;
+  }
+  @include gridle_state(medium) {
+    width: 95%;
+    margin-bottom: 1rem;
+  }
+}
+
+input[type='submit'] {
+  border-radius: 6px;
+  /* Button Background: */
+  background: #C6EE9E;
+  border: 1px solid #D8D8D8;
+
+  font-family: $body-font;
+  font-size: 18px;
+  color: #FFFFFF;
+  line-height: 23px;
+  /* Sign up: */
+  padding: .5rem;
+  width: 60%;
+  display: block;
+
+  @include gridle_state(small) {
+    width: 91%;
+  }
+  @include gridle_state(medium) {
+    width: 95%;
+  }
+}
+
+.cta {
+  .headline {
+    @include gridle_state(small) {
+      font-size: 23px;
+      line-height: 28px;
+    }
+  }
+
+  .sidenote {
+    @include gridle_state(small) {
+      font-size: 16px;
+      line-height: 22px;
+    }
+  }
+}
+
+.input-group {
+  margin-bottom: .5rem;
+}
+
+.wirsing-newsletter-headline {
+  color: #333;
+  margin: 0 0 1.5rem;
+}
+
+.description {
+  @include gridle_container();
+}
+
+.main-description {
+  margin-bottom: 3rem;
+}
+
+.explanation {
+  @include gridle(12);
+}
+
+.benefit {
+  margin-bottom: 2rem;
+}
+
+.benefit-text {
+  margin-bottom: 0;
+}
+
+.wrapper {
+  @include gridle_clear();
+  overflow: hidden;
+}
+
+.location-map {
+  @include gridle(8);
+  @include gridle(12, "medium");
+  @include gridle(12, "small");
+}
+
+.location-info {
+  @include gridle(4);
+  @include gridle(12, "medium");
+  @include gridle(12, "small");
+}
+
+.tickets {
+  iframe {
+    height: 350px !important;
+  }
+}
+
+
+footer {
+
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+
+  .headline {
+    font-size: 24px;
+    line-height: 36px;
+    clear: both;
+    margin-top: 1em;
+  }
+
+  .wirsing {
+    width: 30%;
+    margin: 0 auto;
+    display: block;
+
+    @include gridle_state(medium) {
+      width: 50%;
+    }
+
+    @include gridle_state(small) {
+      width: 80%;
+    }
+
+    img {
+      width: 100%;
+    }
+  }
+
+}
+
+.collaborators, .sponsors {
+
+  @include gridle(12);
+  $number-of-logos: 6;
+
+  li {
+    width: 100% / $number-of-logos;
+    box-sizing: border-box;
+    padding: 0 10px;
+    float: left;
+
+    @include gridle_state(medium) {
+      width: 50%;
+      margin: 40px auto;
+      float: none;
+    }
+
+    @include gridle_state(small) {
+      width: 80%;
+    }
+  }
+  img {
+    display: block;
+    width: 100%;
+  }
+
+  .magdas img {
+    width: 50%;
+    margin: 0 auto;
+  }
+
+  .wiener-tafel img {
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  .zero-waste-jam img {
+    margin-top: 20px;
+  }
+
+  .issmich img {
+    width: 50%;
+    position: relative;
+    top: -6px;
+
+    @include gridle_state(medium) {
+      width: 70%;
+      display: block;
+      margin: 0 auto;
+    }
+  }
+
+  .thegoodtribe img {
+    width: 50%;
+    margin: 0 auto;
+  }
+
+  .sektor5 img {
+    width: 40%;
+    position: relative;
+    top: 8px;
+  }
+
+  .stockwerk img {
+    width: 85%;
+    margin: 0 auto;
+    position: relative;
+    top: 6px;
+  }
+
+  .cospace img {
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  .impacthub img {
+    position: relative;
+    top: 10px;
+  }
+
+  .partycipation img {
+    position: relative;
+    top: 35px;
+  }
+
+  .codeship {
+    width: 30%;
+    margin: 0 auto;
+    float: none;
+
+    @include gridle_state(medium) {
+      width: 50%;
+    }
+
+    @include gridle_state(small) {
+      width: 80%;
+    }
+  }
+}
+
+.posts, .blog {
+  h1, h2, h3, h4 {
+    font-family: $headline-font;
+    line-height: 1.5em;
+  }
+
+  h1 {
+    margin-bottom: 2rem;
+  }
+
+  h3 {
+    font-size: 24px;
+  }
+}

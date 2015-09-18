@@ -1,0 +1,42 @@
+
+$slideshow-arrow-color: rgba(231, 231, 231, 0.7);
+$slideshow-arrow-hover-color: rgba(231, 231, 231, 1);
+$slideshow-arrow-size: 20px;
+
+.slick-slider {
+  position: relative;
+
+  .slick-prev, .slick-next {
+    position: absolute;
+    top: calc(50% - #{$slideshow-arrow-size});
+    width: 0;
+  	height: 0;
+    text-indent: -9999px;
+    overflow: hidden;
+    background: none;
+    border-style: solid;
+	  border-width: $slideshow-arrow-size;
+    padding: 0;
+    border-color: transparent transparent transparent transparent;
+
+    &:focus {
+      outline: 0;
+    }
+  }
+
+  .slick-prev {
+    border-right-color: $slideshow-arrow-color;
+    &:hover {
+      border-right-color: $slideshow-arrow-hover-color;
+    }
+  }
+
+  .slick-next {
+    right: 0;
+    border-left-color: $slideshow-arrow-color;
+    &:hover {
+      border-left-color: $slideshow-arrow-hover-color;
+    }
+  }
+
+}

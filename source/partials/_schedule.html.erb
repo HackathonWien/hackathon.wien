@@ -1,0 +1,16 @@
+<section id="schedule" class="schedule">
+  <h2 class="headline">Foodhack Schedule</h2>
+  <% data.schedule.each do |day, schedule| %>
+    <h3 class="headline"><%= day %></h3>
+    <table class="tables">
+      <tbody>
+        <% schedule.each do |time, activity| %>
+          <tr>
+            <td><%= time %></td>
+            <td><%= activity %></td>
+          </tr>
+        <% end %>
+      </tbody>
+    </table>
+  <% end %>
+</section>
