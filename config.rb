@@ -1,5 +1,5 @@
 set :s3_url, "https://s3-eu-west-1.amazonaws.com/foodhack"
-set :analytics_code, "UA-61872324-1"
+set :analytics_code, "UA-67889709-1"
 
 ###
 # Compass
