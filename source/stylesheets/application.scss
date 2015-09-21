@@ -25,7 +25,7 @@ body {
   line-height: 30px;
   font-family: $body-font;
   color: #4A4A4A;
-  background: #f5f5f5 image-url("images/background-food.png") repeat top left;
+  background: #f5f5f5;
 }
 
 .hidden {
@@ -75,7 +75,11 @@ p {
 }
 
 a {
-  text-decoration: none;
+  text-decoration: underline;
+  color: $brand-light;
+  &:hover {
+    color: $brand-color;
+  }
 }
 
 dd {
@@ -140,7 +144,7 @@ li {
   }
 
   .banner-headline {
-    color: $wirsing-color;
+    color: $brand-color;
 
     margin-bottom: 1rem;
 
@@ -166,7 +170,7 @@ li {
   }
 
   .banner-subsubheadline {
-    color: $wirsing-light;
+    color: $brand-light;
 
     margin-bottom: 1rem;
 
@@ -448,5 +452,20 @@ footer {
 
   h3 {
     font-size: 24px;
+  }
+}
+
+.main-link {
+  font-family: $body-font;
+}
+
+.collaborator {
+  width: 200px;
+  margin: 3rem auto 3rem;
+
+  h4 {
+    font-size: 14px;
+    text-decoration: none;
+    display: inline-block;
   }
 }
