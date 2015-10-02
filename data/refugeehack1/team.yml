@@ -1,0 +1,24 @@
+- name: Aaron Cruz
+  twitter: mraaroncruz
+  github: pferdefleisch
+  avatar: "/images/team/aaron.png"
+
+- name: Helene Pattermann
+  twitter: helenenenene
+  github: helenenenene
+  avatar: "/images/team/helene.png"
+
+- name: Maria Angerer
+  twitter:
+  github:
+  avatar: "/images/team/maria.png"
+
+- name: Dominik Guzei
+  twitter:
+  github: dominikguzei
+  avatar: "/images/team/dominik.png"
+
+- name: Floor Drees
+  twitter: FloorDrees
+  github: floord
+  avatar: "/images/team/floor.png"

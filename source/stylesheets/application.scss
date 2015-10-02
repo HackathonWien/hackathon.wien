@@ -469,3 +469,11 @@ footer {
     display: inline-block;
   }
 }
+
+.team {
+  .team-member {
+    @include gridle(4);
+    @include gridle(6, "medium");
+    @include gridle(12, "small");
+  }
+}
