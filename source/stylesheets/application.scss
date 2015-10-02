@@ -471,6 +471,9 @@ footer {
 }
 
 .team {
+  .team-container {
+    @include gridle-parent;
+  }
   .team-member {
     @include gridle(4);
     @include gridle(6, "medium");

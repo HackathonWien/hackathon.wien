@@ -1,22 +1,23 @@
 <section id="team" class="team">
   <h2 class="headline">Refugee Hack Team</h2>
-  <% data.refugeehack1.team.each do |member| %>
-    <div class="team-member">
-      <img src="<%= member.avatar %>" alt="" />
-      <h3><%= member.name %></h3>
-      <ul class="social">
-        <% %w(twitter github).each do |soc| %>
-          <% if member[soc] %>
-          <li class="social-link">
-          <a href="<%= soc == "twitter" ? "https://twitter.com/#{member[soc]}" : "https://github.com/#{member[soc]}" %>">
-            <%= soc %>
-          </a>
-          </li>
+  <div class="team-container">
+    <% data.refugeehack1.team.each do |member| %>
+      <div class="team-member">
+        <img src="<%= member.avatar %>" alt="" />
+        <h3><%= member.name %></h3>
+        <ul class="social">
+          <% %w(twitter github).each do |soc| %>
+            <% if member[soc] %>
+            <li class="social-link">
+            <a href="<%= soc == "twitter" ? "https://twitter.com/#{member[soc]}" : "https://github.com/#{member[soc]}" %>">
+              <%= soc %>
+            </a>
+            </li>
+            <% end %>
           <% end %>
-        <% end %>
-      </ul>
-    </div>
-  <% end %>
-
+        </ul>
+      </div>
+    <% end %>
+  </div>
 </section>
 
