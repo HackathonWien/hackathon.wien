@@ -478,5 +478,15 @@ footer {
     @include gridle(4);
     @include gridle(6, "medium");
     @include gridle(12, "small");
+
+    img {
+      border-radius: 50%;
+    }
+
+    .team-member-name {
+      font-size: 24px;
+      font-family: $headline-font;
+      text-align: center;
+    }
   }
 }

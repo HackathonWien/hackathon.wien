@@ -4,18 +4,7 @@
     <% data.refugeehack1.team.each do |member| %>
       <div class="team-member">
         <img src="<%= member.avatar %>" alt="" />
-        <h3><%= member.name %></h3>
-        <ul class="social">
-          <% %w(twitter github).each do |soc| %>
-            <% if member[soc] %>
-            <li class="social-link">
-            <a href="<%= soc == "twitter" ? "https://twitter.com/#{member[soc]}" : "https://github.com/#{member[soc]}" %>">
-              <%= soc %>
-            </a>
-            </li>
-            <% end %>
-          <% end %>
-        </ul>
+        <h3 class="team-member-name"><%= member.name %></h3>
       </div>
     <% end %>
   </div>
