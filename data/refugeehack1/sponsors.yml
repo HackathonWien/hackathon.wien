@@ -1,0 +1,20 @@
+- name: adamah
+  image: "/images/sponsors/adamah.png"
+  link: "http://www.adamah.at/"
+
+- name: sektor5
+  image: "/images/sponsors/sektor5.png"
+  link: "http://www.sektor5.at"
+
+- name: stockwerk
+  image: "/images/sponsors/stockwerk.png"
+  link: "http://stockwerk.co.at"
+
+- name: openknowledgeaustria
+  image: "/images/sponsors/openknowledgeat.png"
+  link: "http://okfn.at/"
+
+- name: magdas
+  image: "/images/sponsors/magdas.png"
+  link: "http://www.magdas-hotel.at/"
+

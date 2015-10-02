@@ -1,17 +1,12 @@
 <footer>
   <h3 class="headline">in collaboration with …</h3>
   <div class="collaborators">
-    <p class="collaborator">
-      <a href="http://www.sektor5.at/" target="_blank">
-        <img src="/images/logos/sektor5_logo.png" />
-      </a>
-      <h4>sektor5</h4>
-    </p>
-    <p class="collaborator">
-      <a href="http://www.stockwerk.co.at/" target="_blank">
-        <img src="/images/logos/stockwerk_logo.png" />
-      </a>
-      <h4>Stockwerk</h4>
-    </p>
+    <% data.refugeehack1.sponsors.each do |sponsor| %>
+      <div class="collaborator">
+        <a href="<%= sponsor.link %>" target="_blank">
+          <img src="<%= sponsor.image %>" />
+        </a>
+      </div>
+    <% end %>
   </div>
 </footer>

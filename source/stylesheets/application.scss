@@ -341,102 +341,12 @@ footer {
 }
 
 .collaborators, .sponsors {
-
-  @include gridle(12);
-  $number-of-logos: 6;
-
-  li {
-    width: 100% / $number-of-logos;
-    box-sizing: border-box;
-    padding: 0 10px;
-    float: left;
-
-    @include gridle_state(medium) {
-      width: 50%;
-      margin: 40px auto;
-      float: none;
-    }
-
-    @include gridle_state(small) {
-      width: 80%;
-    }
-  }
-  img {
-    display: block;
-    width: 100%;
-  }
-
-  .magdas img {
-    width: 50%;
-    margin: 0 auto;
-  }
-
-  .wiener-tafel img {
-    width: 80%;
-    margin: 0 auto;
-  }
-
-  .zero-waste-jam img {
-    margin-top: 20px;
-  }
-
-  .issmich img {
-    width: 50%;
-    position: relative;
-    top: -6px;
-
-    @include gridle_state(medium) {
-      width: 70%;
-      display: block;
-      margin: 0 auto;
-    }
-  }
-
-  .thegoodtribe img {
-    width: 50%;
-    margin: 0 auto;
-  }
-
-  .sektor5 img {
-    width: 40%;
-    position: relative;
-    top: 8px;
-  }
-
-  .stockwerk img {
-    width: 85%;
-    margin: 0 auto;
-    position: relative;
-    top: 6px;
-  }
-
-  .cospace img {
-    width: 80%;
-    margin: 0 auto;
-  }
-
-  .impacthub img {
-    position: relative;
-    top: 10px;
-  }
-
-  .partycipation img {
-    position: relative;
-    top: 35px;
-  }
-
-  .codeship {
-    width: 30%;
-    margin: 0 auto;
-    float: none;
-
-    @include gridle_state(medium) {
-      width: 50%;
-    }
-
-    @include gridle_state(small) {
-      width: 80%;
-    }
+  @include gridle-parent();
+  .collaborator {
+    @include gridle-push(1);
+    @include gridle(2);
+    @include gridle(4, "medium");
+    @include gridle(6, "small");
   }
 }
 
