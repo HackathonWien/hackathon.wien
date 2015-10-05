@@ -1,27 +1,31 @@
 - name: lieferei
   image: "/images/sponsors/lieferei.png"
-  link: "http://www.lieferei.at/"
+  link: "http://www.lieferei.at?utm_source=refugeehackvienna&utm_medium=website&utm_campaign=refugeehack"
 
 - name: adamah
   image: "/images/sponsors/adamah.png"
-  link: "http://www.adamah.at/"
+  link: "http://www.adamah.at?utm_source=refugeehackvienna&utm_medium=website&utm_campaign=refugeehack"
+
+- name: adamah
+  image: "/images/sponsors/nixe.png"
+  link: "http://www.nixe-bier.com?utm_source=refugeehackvienna&utm_medium=website&utm_campaign=refugeehack"
 
 - name: sektor5
   image: "/images/sponsors/sektor5.png"
-  link: "http://www.sektor5.at"
+  link: "http://www.sektor5.at?utm_source=refugeehackvienna&utm_medium=website&utm_campaign=refugeehack"
 
 - name: stockwerk
   image: "/images/sponsors/stockwerk.png"
-  link: "http://stockwerk.co.at"
+  link: "http://stockwerk.co.at?utm_source=refugeehackvienna&utm_medium=website&utm_campaign=refugeehack"
 
 - name: openknowledgeaustria
   image: "/images/sponsors/openknowledgeat.png"
-  link: "http://okfn.at/"
+  link: "http://okfn.at?utm_source=refugeehackvienna&utm_medium=website&utm_campaign=refugeehack"
 
 - name: magdas
   image: "/images/sponsors/magdas.png"
-  link: "http://www.magdas-hotel.at/"
+  link: "http://www.magdas-hotel.at?utm_source=refugeehackvienna&utm_medium=website&utm_campaign=refugeehack"
 
 - name: neos
   image: "/images/sponsors/neos.png"
-  link: "https://neos.eu/"
+  link: "https://neos.eu?utm_source=refugeehackvienna&utm_medium=website&utm_campaign=refugeehack"
