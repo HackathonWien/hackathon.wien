@@ -1,3 +1,7 @@
+- name: lieferei
+  image: "/images/sponsors/lieferei.png"
+  link: "http://www.lieferei.at/"
+
 - name: adamah
   image: "/images/sponsors/adamah.png"
   link: "http://www.adamah.at/"
