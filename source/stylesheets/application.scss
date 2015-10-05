@@ -343,7 +343,6 @@ footer {
 .collaborators, .sponsors {
   @include gridle-parent();
   .collaborator {
-    @include gridle-push(1);
     @include gridle(2);
     @include gridle(4, "medium");
     @include gridle(6, "small");
