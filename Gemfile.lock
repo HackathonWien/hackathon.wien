@@ -44,7 +44,7 @@ GEM
     haml (4.0.5)
       tilt
     hike (1.2.3)
-    hitimes (1.2.2)
+    hitimes (1.2.3)
     hooks (0.4.0)
       uber (~> 0.0.4)
     http_parser.rb (0.6.0)
@@ -159,3 +159,6 @@ DEPENDENCIES
   neat
   nokogiri
   rake
+
+BUNDLED WITH
+   1.10.6
