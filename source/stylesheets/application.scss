@@ -131,6 +131,7 @@ li {
 
 .banner {
   padding-top: 2rem;
+  padding-bottom: 0;
   opacity: .81;
 
   img {
@@ -398,4 +399,9 @@ footer {
       text-align: center;
     }
   }
+}
+
+.subscribe.button {
+  margin-bottom: 1em;
+  font-size: 1.4em;
 }
