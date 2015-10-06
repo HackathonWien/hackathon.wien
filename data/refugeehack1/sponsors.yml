@@ -1,3 +1,7 @@
+- name: globrain
+  image: "/images/sponsors/globrain.jpg"
+  link: "http://www.glbrain.com/?utm_source=refugeehackvienna&utm_medium=website&utm_campaign=refugeehack"
+
 - name: lieferei
   image: "/images/sponsors/lieferei.png"
   link: "http://www.lieferei.at?utm_source=refugeehackvienna&utm_medium=website&utm_campaign=refugeehack"
