@@ -61,10 +61,6 @@ h3 {
   }
 }
 
-header {
-  margin-bottom: $default-margin-bottom;
-}
-
 p {
   margin-bottom: 1rem;
   @include gridle_state(small) {
@@ -97,7 +93,7 @@ dt {
   padding-bottom: 3rem;
 }
 
-section {
+section, .banner > .wrapper {
   @include gridle(8);
   @include gridle_push(2);
   @include gridle(11, "medium");
@@ -131,8 +127,11 @@ li {
 
 .banner {
   padding-top: 2rem;
-  padding-bottom: 0;
   opacity: .81;
+  width: 100%;
+  background: image_url('header-bg.jpg') no-repeat;
+  background-size: cover;
+  left: 0;
 
   img {
     position: relative;
@@ -158,7 +157,7 @@ li {
 
   .banner-subheadline {
     margin-bottom: 1rem;
-
+    color: white;
     font-size: 36px;
     line-height: 48px;
 
@@ -402,6 +401,6 @@ footer {
 }
 
 .subscribe.button {
-  margin-bottom: 1em;
+  margin-top: 1em;
   font-size: 1.4em;
 }
