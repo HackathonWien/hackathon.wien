@@ -1,9 +1,9 @@
 // Typography
-$sans-serif: $helvetica;
+$sans-serif: "Quattrocento", Helvetica, Arial, sans-serif;
 //$serif: $georgia;
 $serif: "Raleway", Georgia;
 $base-font-family: $sans-serif;
-$header-font-family: $base-font-family;
+$header-font-family: "Oswald", Helvetica, Arial, sans-serif;
 
 // Font Sizes
 $base-font-size: 1em;
@@ -22,6 +22,7 @@ $header-line-height: 1.25;
 $base-border-radius: 3px;
 $base-spacing: $base-line-height * 1em;
 $base-z-index: 0;
+$default-margin-bottom: 2rem;
 
 // Colors
 $blue: #477DCA;
@@ -33,6 +34,10 @@ $light-yellow: #FFF6BF;
 $light-green: #E6EFC2;
 
 // Theme Colors
+$brand-color: #F39739;
+$brand-light: lighten($brand-color, 8%);
+
+
 $red: #DE4C3E;
 $blue: #B0D9C6;
 $salmon: #EEA086;
@@ -41,14 +46,14 @@ $theme-gray: #CDCECA;
 $darker-gray: #333333;
 $dark-gray: #666666;
 
-$buttcolor: $red;
+$buttcolor: $brand-color;
 
 // Background Color
 $base-background-color: #F5F5F5;
 
 // Font Colors
 $base-font-color: $dark-gray;
-$base-accent-color: $blue;
+$base-accent-color: $red;
 
 // Link Colors
 $base-link-color: $base-accent-color;
