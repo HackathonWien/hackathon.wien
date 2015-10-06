@@ -403,4 +403,7 @@ footer {
 .subscribe.button {
   margin-top: 1em;
   font-size: 1.4em;
+  @include gridle_state(small) {
+    font-size: 1em;
+  }
 }
