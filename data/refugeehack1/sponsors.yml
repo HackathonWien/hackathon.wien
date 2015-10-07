@@ -2,10 +2,6 @@
   image: "/images/sponsors/globrain.jpg"
   link: "http://www.glbrain.com/?utm_source=refugeehackvienna&utm_medium=website&utm_campaign=refugeehack"
 
-- name: lieferei
-  image: "/images/sponsors/lieferei.png"
-  link: "http://www.lieferei.at?utm_source=refugeehackvienna&utm_medium=website&utm_campaign=refugeehack"
-
 - name: adamah
   image: "/images/sponsors/adamah.png"
   link: "http://www.adamah.at?utm_source=refugeehackvienna&utm_medium=website&utm_campaign=refugeehack"
@@ -33,3 +29,20 @@
 - name: neos
   image: "/images/sponsors/neos.png"
   link: "https://neos.eu?utm_source=refugeehackvienna&utm_medium=website&utm_campaign=refugeehack"
+
+- name: blakstoc
+  image: "/images/sponsors/blakstoc.png"
+  link: "http://www.blakstoc.com?utm_source=refugeehackvienna&utm_medium=website&utm_campaign=refugeehack"
+
+- name: pona
+  image: "/images/sponsors/pona.png"
+  link: "http://www.pona.at?utm_source=refugeehackvienna&utm_medium=website&utm_campaign=refugeehack"
+
+- name: miomiomate
+  image: "/images/sponsors/miomiomate.png"
+  link: "http://www.vivaris.net?utm_source=refugeehackvienna&utm_medium=website&utm_campaign=refugeehack"
+
+- name: lieferei
+  image: "/images/sponsors/lieferei.png"
+  link: "http://www.lieferei.at?utm_source=refugeehackvienna&utm_medium=website&utm_campaign=refugeehack"
+
