@@ -22,6 +22,14 @@
   image: "/images/sponsors/openknowledgeat.png"
   link: "http://okfn.at?utm_source=refugeehackvienna&utm_medium=website&utm_campaign=refugeehack"
 
+- name: usersnap
+  image: "/images/sponsors/usersnap.png"
+  link: "https://usersnap.com/?utm_source=refugeehackvienna&utm_medium=website&utm_campaign=refugeehack"
+
+- name: blossom
+  image: "/images/sponsors/blossom.png"
+  link: "https://www.blossom.co?utm_source=refugeehackvienna&utm_medium=website&utm_campaign=refugeehack"
+
 - name: magdas
   image: "/images/sponsors/magdas.png"
   link: "http://www.magdas-hotel.at?utm_source=refugeehackvienna&utm_medium=website&utm_campaign=refugeehack"
