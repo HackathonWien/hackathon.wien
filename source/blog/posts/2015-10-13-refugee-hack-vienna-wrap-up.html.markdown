@@ -1,9 +1,8 @@
 ---
 title: Refugee Hack Vienna Wrap Up
-date: 2015-10-13 11:00 UTC
+date: 2015-10-13 10:16 UTC
 tags:
 ---
-
 Refugee Hack Vienna was a 2 days and 1 evening contest, where developers,
 graphic/web/UX designers and project managers came together to build software
 to help refugees in Austria either directly or indirectly by helping organisations
@@ -20,3 +19,4 @@ probably many other people in Vienna would also like to help in that way.
 And we were right to think so...
 
 ## More Coverage is Coming Within the Next Hours …
+
