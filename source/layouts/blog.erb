@@ -8,7 +8,7 @@
     <meta content="width=device-width, initial-scale=1, maximum-scale=1" name="viewport">
 
     <!-- Use title if it's in the page YAML frontmatter -->
-    <title>Foodhack<%= ' - ' + current_article.title unless current_article.nil? %></title>
+    <title>Hackathon.wien<%= ' - ' + current_article.title unless current_article.nil? %></title>
     <%= feed_tag :atom, "#{blog.options.prefix.to_s}/feed.xml", title: "Atom Feed" %>
     <%= stylesheet_link_tag "normalize", "application" %>
   </head>
@@ -18,7 +18,7 @@
       <div class="container">
         <section>
           <div class="container">
-            <h1>Foodhack Blog</h1>
+            <h1>Hackathon.wien Blog</h1>
             <% blog.articles[0...10].each do |article| %>
               <article>
                 <h2><span><%= article.date.strftime('%b %e') %></span>&nbsp;&nbsp;<%= link_to article.title, article %></h2>
