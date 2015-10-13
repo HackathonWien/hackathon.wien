@@ -45,9 +45,22 @@ end
 
 # blog
 activate :blog do |blog|
-  blog.sources   = "posts/{year}-{month}-{day}-{title}.html"
-  blog.permalink = "posts/{title}.html"
+  blog.prefix    = "blog"
+  blog.permalink = "posts/{year}-{month}-{day}-{title}.html"
+  blog.sources   = "blog/posts/{year}-{month}-{day}-{title}.html"
   blog.layout    = "layouts/article"
+ # blog.taglink = "tags/{tag}.html"
+ # blog.summary_separator = /(READMORE)/
+ # blog.summary_length = 250
+ # blog.year_link = "{year}.html"
+ # blog.month_link = "{year}/{month}.html"
+ # blog.day_link = "{year}/{month}/{day}.html"
+ # blog.tag_template = "tag.html"
+ # blog.calendar_template = "calendar.html"
+ # Enable pagination
+ # blog.paginate = true
+ # blog.per_page = 10
+ # blog.page_link = "page/{num}"
 end
 
 
