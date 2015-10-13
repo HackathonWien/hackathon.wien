@@ -118,10 +118,12 @@ ul {
   margin: 0px;
   padding: 0px;
   margin-bottom: $default-margin-bottom;
+  list-style-type: disc;
+  margin-left: 1em;
 }
 
 li {
-  list-style: none;
+  list-style: disc;
   margin-bottom: .5rem;
 }
 
