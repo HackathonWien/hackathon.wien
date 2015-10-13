@@ -46,7 +46,7 @@ end
 # blog
 activate :blog do |blog|
   blog.prefix    = "blog"
-  blog.permalink = "posts/{year}-{month}-{day}-{title}.html"
+  blog.permalink = "{title}.html"
   blog.sources   = "posts/{year}-{month}-{day}-{title}.html"
   blog.layout    = "layouts/article"
  # blog.taglink = "tags/{tag}.html"
