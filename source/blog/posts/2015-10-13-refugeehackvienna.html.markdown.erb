@@ -126,6 +126,8 @@ specific challenge. Team 5 Sachspenden did that:
 
 ### Team “Refugees Connect“
 
+![Team Refugees Connect](<%= image_path 'refugee-hack/image08.png' %>)
+
 It works like a wakie-talkie. It makes it easy for refugees to connect with
 other refugees, helpers (the roles can be chosen and changed) for less servere
 problems, like “I want to have a coffee”, or I need one winter jacket.
@@ -136,6 +138,8 @@ want to know what is going on at the border. You can ask if they need something
 or if it is worth coming there, are possible super powerful use cases.
 
 ### Team Open Knowledge Austria “Free Data”
+
+![Open Knowledge Austria](<%= image_path 'refugee-hack/image00.jpg' %>)
 
 They worked on solving the big problem in the current discussion about refugees,
 that a lot of the discussion is not based on facts. So much is based on rumors
@@ -189,6 +193,8 @@ is very excited to use this website for her work within the next weeks.
 
 ![The Jury](<%= image_path 'refugee-hack/image01.jpg' %>)
 
+from left to right:
+
 * Stephan Bazalka, Caritas, Head of IT
 * Daniela Krautsack, Cities next, media strategist
 * Petar Petrov, Creative Pragmatics, App-Development
@@ -211,9 +217,30 @@ come help again later.
 
 ### The Grand Prize
 
-* Magdas Hotel Breakfast-Voucher for the whole team
-* 2 days conference room at Sektor 5 + free drinks
-* 5 flex desks tickets at Stockwerk coworking ½ prize
-* Helene Pattermann Crowdfunding Campaign Consulting
-* Promotion from hackathon.wien
-* 1 cate of Lieferei drinks
+![The Grand Prize](<%= image_path 'refugee-hack/image09.png' %>)
+
+* [Magdas Hotel](http://www.magdas-hotel.at/home/) Breakfast-Voucher for the whole team
+* 2 days conference room at [Sektor 5](http://www.magdas-hotel.at/home/) + free drinks
+* 5 flex desks tickets at [Stockwerk coworking](http://www.stockwerk.co.at/) ½ prize
+* [Helene Pattermann](http://helenepattermann.weebly.com/) Crowdfunding Campaign Consulting
+* Promotion from [hackathon.wien](http://www.hackathon.wien/)
+* 1 cate of [Lieferei](http://www.lieferei.at/) drinks
+
+## Thanks
+
+Thanks to everyone, who was involved making this Refugee Hack Vienna possible.
+Thanks to all the participants for dedicated their time and knowledge for this cause.
+
+### Special thanks to our sponsors:
+
+<div class="collaborators">
+  <% data.refugeehack1.sponsors.each do |sponsor| %>
+    <div class="collaborator">
+      <a href="<%= sponsor.link %>" target="_blank">
+        <img src="<%= sponsor.image %>" />
+      </a>
+    </div>
+  <% end %>
+</div>
+
+Pictures if not marked different are the property of hackathon.wien
